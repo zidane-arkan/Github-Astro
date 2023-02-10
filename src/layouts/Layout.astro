@@ -1,0 +1,27 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Sidebar from "../components/Sidebar.astro";
+import Footer from "../components/Footer.astro";
+import Profile from "../components/Profile.astro";
+import Repositorie from "../pages/repositorie.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Github-Astro</title>
+  </head>
+  <body>
+    <Navbar />
+    <main class="flex flex-row bg-[#041016] md:max-w-full">
+      <Sidebar />
+      <!-- <Repositorie /> -->
+      <slot />
+      <Profile />
+    </main>
+    <Footer />
+  </body>
+</html>

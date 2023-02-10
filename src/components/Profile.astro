@@ -1,0 +1,39 @@
+---
+import buildingImg from "../assets/building.png";
+import groupImg from "../assets/group.png";
+import locationImg from "../assets/location.png";
+import userBig from "../assets/userbig.png";
+---
+
+<section
+  class="max-w-full space-y-8 border-l-[1px] border-solid border-[#777777] px-14 py-14 text-[#FFFFFF] md:w-[35rem]"
+>
+  <div class="flex w-full flex-row items-center justify-between xl:gap-8">
+    <img src={userBig} alt="" />
+    <ul class="flex w-full flex-col gap-4">
+      <li class="flex w-full flex-row items-end gap-2">
+        <img class="self-center" src={buildingImg} alt="" />
+        <p class="text-xs">University Of Sriwijaya</p>
+      </li>
+      <li class="flex w-full flex-row items-end gap-2">
+        <img class="self-center" src={groupImg} alt="" />
+        <p class="text-xs">Indonesia, South Sumatra</p>
+      </li>
+      <li class="flex w-full flex-row gap-2">
+        <img class="self-center" src={locationImg} alt="" />
+        <p class="text-xs">18:03 (UTC +07:00)</p>
+      </li>
+    </ul>
+  </div>
+  <div class="flex w-full flex-row items-center xl:gap-8">
+    <span class="flex flex-col">
+      <h2 class="text-2xl font-semibold">Kevin Naserwan</h2>
+      <p class="text-lg font-light text-[#C2CFD9]">KevinNaserwan</p>
+    </span>
+    <button
+      class=" text-white bg-[#021B27] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-8 py-4 text-center inline-flex items-center"
+    >
+      Edit Profile
+    </button>
+  </div>
+</section>

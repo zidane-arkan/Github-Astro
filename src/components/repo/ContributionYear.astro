@@ -1,0 +1,52 @@
+---
+// import DropdownButton from "../dropdown/DropdownButton";
+// import Contribute from "../dropdown/Contribute";
+// import Button from "../Button";
+// import DropdownBtn from "../DropdownBtn";
+import rocketImg from "../../assets/rocket.png";
+import playImg from "../../assets/play.png";
+---
+
+<section class="space-y-5">
+  <div class="flex w-full flex-row justify-between">
+    <h3 class="text-lg font-medium md:text-xl">10 contriburions in the last year</h3>
+    
+    <!-- <DropdownBtn client:idle isUseBg={false} triggerBtn="Repositorie Settings" lists={["Menu","Data",""]} /> -->
+  </div>
+  <div class="rounded-x flex flex-wrap text-center text-sm font-medium">
+    <div class="flex w-full flex-row items-center justify-between rounded-t-xl bg-[#13233A] p-6">
+      <span class="flex flex-row items-center gap-3">
+        <img src={rocketImg} alt="Rocket Image" />
+        <h4 class="inline-block text-sm text-white">
+          We are celebrating 100 million developers!
+          <a class="text-sm text-[#559DE6]" href="#">Read our blogpost</a>.
+        </h4>
+      </span>
+      <button
+        class="hover-animation text-sm inline-flex bg-[#21262D] font-semibold text-[#D3D3D3] border-[2px] border-solid border-[#A5A6A8] border-opacity-50 rounded-lg gap-3 px-6 py-3"
+      >
+        <img src={playImg} alt="Play Image" />
+        Play An Animation
+      </button>
+    </div>
+    <span
+      class="flex w-full flex-col items-start justify-between gap-6 rounded-b-xl bg-[#021B27] px-8 pb-8"
+    >
+      <div>
+        <button></button>
+        <span></span>
+        <button></button>
+        <span></span>
+        <button></button>
+      </div>
+      <div class="inline-flex w-full flex-col items-start gap-2">
+        <h5 class="text-base font-medium">3x Contribution</h5>
+        <!-- Bar Progress -->
+        <span class="h-3 w-full rounded-xl bg-gray-200">
+          <div class="h-3 rounded-xl bg-[#39D353]" style="width: 95%"></div>
+        </span>
+      </div>
+      <p class="text-[#A5A6A8]">Learn how we count contributions</p>
+    </span>
+  </div>
+</section>

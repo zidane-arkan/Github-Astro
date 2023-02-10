@@ -1,0 +1,62 @@
+---
+// import Button from "../Button";
+// import DropdownBtn from "../DropdownBtn";
+// import ActivityCard from "../ActivityCard";
+---
+
+<section>
+  <div class="flex w-full flex-row justify-between">
+    <h3 class="text-lg font-medium md:text-xl">Contribution activity</h3>
+  </div>
+
+  <div class="group flex flex-col justify-between rounded-lg p-4 xl:w-full">
+    <div class="flex w-full flex-row items-center justify-between">
+      <h4 class="p-4 text-base font-medium text-white">Maret 2023</h4>
+      <span class="w-[70%] border border-solid border-[#777777]"></span>
+      <!--Dropdown  Button -->
+      <div class="relative">
+        <button
+          class="text-white bg-[#021B27] font-medium rounded-lg text-sm px-6 py-2.5 text-center inline-flex items-center"
+        >
+          2023
+          <svg
+            class="w-4 h-4 ml-2"
+            aria-hidden="true"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            ><path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"></path></svg
+          >
+        </button>
+        <div
+          class="absolute hidden z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+        >
+          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+            <li class="menu">
+              <a
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                href="#"
+              >
+                2022
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- <DropdownBtn client:load triggerBtn="2023" isUseBg={true} lists={["2022", "2021", "2020"]} /> -->
+    </div>
+    <div class="flex w-full flex-col items-center justify-center gap-6 p-4 xl:w-full xl:text-base">
+      <!-- <ActivityCard client:load /> -->
+      <button
+        class="text-[#559DE6] bg-[#21262D] font-base rounded-lg text-sm px-8 py-4 text-center inline-flex items-center"
+      >
+        Show more activity
+      </button>
+    </div>
+  </div>
+</section>

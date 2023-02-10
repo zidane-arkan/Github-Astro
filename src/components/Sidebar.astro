@@ -1,0 +1,51 @@
+---
+import overviewImg from "../assets/sidebar/overview.png";
+import repoImg from "../assets/sidebar/repo.png";
+import projectImg from "../assets/sidebar/project.png";
+import packageImg from "../assets/sidebar/package.png";
+import starImg from "../assets/sidebar/star.png";
+---
+
+<aside
+  id="default-sidebar"
+  class="max-w-full space-y-8 border-r-[1px] border-solid border-[#777777] px-5 py-10 text-[#FFFFFF] md:w-[15rem]"
+  aria-label="Sidebar"
+>
+  <div class="h-full overflow-y-auto py-4">
+    <ul class="space-y-6">
+      <li>
+        <a href="#" class="flex items-center rounded-lg p-2 text-lg font-medium text-[#fff]">
+          <img src={overviewImg} alt="Overview Img" />
+          <span class="ml-3">Overview</span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+          class="flex items-center rounded-sm border-b-2 border-solid border-[#FB8500] p-2 pb-3 text-lg font-medium text-[#fff]"
+        >
+          <img src={repoImg} alt="Overview Img" />
+          <span class="ml-3 flex-1 whitespace-nowrap">Repositories</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center rounded-lg p-2 text-lg font-medium text-[#fff]">
+          <img src={projectImg} alt="Overview Img" />
+          <span class="ml-3 flex-1 whitespace-nowrap">Projects</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center rounded-lg p-2 text-lg font-medium text-[#fff]">
+          <img src={packageImg} alt="Overview Img" />
+          <span class="ml-3 flex-1 whitespace-nowrap">Packages</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="flex items-center rounded-lg p-2 text-base font-normal text-[#fff]">
+          <img src={starImg} alt="Overview Img" />
+          <span class="ml-3 flex-1 whitespace-nowrap">Stars</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</aside>
