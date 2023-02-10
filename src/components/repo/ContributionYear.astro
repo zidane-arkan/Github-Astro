@@ -10,7 +10,37 @@ import playImg from "../../assets/play.png";
 <section class="space-y-5">
   <div class="flex w-full flex-row justify-between">
     <h3 class="text-lg font-medium md:text-xl">10 contriburions in the last year</h3>
-    
+    <div class="relative">
+      <button
+        class="text-white font-medium rounded-lg text-sm px-6 py-2.5 text-center inline-flex items-center"
+      >
+        Contribution settings
+        <svg
+          class="w-4 h-4 ml-2"
+          aria-hidden="true"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          ><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"
+          ></path></svg
+        >
+      </button>
+      <div
+        class="absolute hidden z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
+      >
+        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+          <li class="menu">
+            <a
+              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+              href="#"
+            >
+              2022
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- <DropdownBtn client:idle isUseBg={false} triggerBtn="Repositorie Settings" lists={["Menu","Data",""]} /> -->
   </div>
   <div class="rounded-x flex flex-wrap text-center text-sm font-medium">
@@ -32,12 +62,63 @@ import playImg from "../../assets/play.png";
     <span
       class="flex w-full flex-col items-start justify-between gap-6 rounded-b-xl bg-[#021B27] px-8 pb-8"
     >
-      <div>
-        <button></button>
-        <span></span>
-        <button></button>
-        <span></span>
-        <button></button>
+      <div class="flex flex-row items-center gap-3 pt-6">
+        <button
+          class="text-white bg-[#13233A] font-medium rounded-lg text-sm px-6 py-2.5 text-center inline-flex items-center"
+        >
+          16
+          <svg
+            class="w-4 h-4 ml-2"
+            aria-hidden="true"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            ><path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"></path></svg
+          >
+        </button>
+        <span class="w-[15px] h-1 bg-white"></span>
+        <button
+          class="text-white bg-[#13233A] font-medium rounded-lg text-sm px-8 py-2.5 text-center inline-flex items-center"
+        >
+          March
+          <svg
+            class="w-4 h-4 ml-2"
+            aria-hidden="true"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            ><path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"></path></svg
+          >
+        </button>
+        <span class="w-[15px] h-1 bg-white"></span>
+        <button
+          class="text-white bg-[#13233A] font-medium rounded-lg text-sm px-10 py-2.5 text-center inline-flex items-center"
+        >
+          2023
+          <svg
+            class="w-4 h-4 ml-2"
+            aria-hidden="true"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            ><path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"></path></svg
+          >
+        </button>
       </div>
       <div class="inline-flex w-full flex-col items-start gap-2">
         <h5 class="text-base font-medium">3x Contribution</h5>
