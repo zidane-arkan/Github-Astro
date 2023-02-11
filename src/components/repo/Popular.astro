@@ -1,11 +1,10 @@
 ---
+import Card from "../../layouts/Card.astro";
 ---
 
 <section class="space-y-6">
   <h3 class="text-xl font-medium md:text-xl">Popular repositories</h3>
-  <div
-    class="group flex flex-col justify-between rounded-lg bg-[#021823] p-8 shadow-xl transition-shadow hover:shadow-lg xl:w-full"
-  >
+  <Card>
     <div class="flex flex-row items-center justify-between">
       <div class="flex flex-col gap-3">
         <h3 class="text-lg font-semibold text-[#FB8500]">Gudang Barang</h3>
@@ -23,5 +22,5 @@
       <span class="h-[1rem] w-[1rem] rounded-full bg-[#AF1CE2]"></span>
       <p class="text-lg font-medium">CSS</p>
     </div>
-  </div>
+  </Card>
 </section>
