@@ -1,6 +1,8 @@
 ---
 import usersmall from "../assets/usersmall.png";
 import githubImg from "../assets/github.png";
+import plusImg from "../assets/plus.png";
+import notifImg from "../assets/notif.png";
 ---
 
 <nav class="bg-[#021823] px-4 py-4 sm:px-6 lg:px-10">
@@ -10,7 +12,89 @@ import githubImg from "../assets/github.png";
       <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Github</span
       >
     </a>
-    <div class="flex items-center md:order-2">
+    <div
+      class="hidden w-full items-center justify-between md:order-1 md:flex md:w-auto"
+      id="mobile-menu-2"
+    >
+      <ul
+        class="mt-4 flex flex-col rounded-lg md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium"
+      >
+        <li>
+          <a href="/" class="block rounded py-2 pl-3 pr-4 text-base text-white" aria-current="page"
+            >Pull requests</a
+          >
+        </li>
+        <li>
+          <a href="#" class="block rounded py-2 pl-3 pr-4 text-base text-white">Issues</a>
+        </li>
+        <li>
+          <a href="#" class="block rounded py-2 pl-3 pr-4 text-base text-white">Codespaces</a>
+        </li>
+        <li>
+          <a href="#" class="block rounded py-2 pl-3 pr-4 text-base text-white">Marketplace</a>
+        </li>
+        <li>
+          <a href="#" class="block rounded py-2 pl-3 pr-4 text-base text-white">Explore</a>
+        </li>
+      </ul>
+    </div>
+    <div class="flex items-center gap-8 md:order-2">
+      <button
+        type="button"
+        class="mr-3 flex md:mr-0"
+        id="user-menu-button"
+      >
+        <img class="h-auto w-auto" src={notifImg} alt="user photo" />
+      </button>
+      <!-- Dropdown menu -->
+      <button
+        data-collapse-toggle="mobile-menu-2"
+        type="button"
+        class="ml-1 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+        aria-controls="mobile-menu-2"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="h-6 w-6"
+          aria-hidden="true"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          ><path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path></svg
+        >
+      </button>
+      <button
+        type="button"
+        class="mr-3 flex text-sm md:mr-0"
+        id="user-menu-button"
+      >
+        <img class="h-auto w-auto" src={plusImg} alt="user photo" />
+      </button>
+      <!-- Dropdown menu -->
+      <button
+        data-collapse-toggle="mobile-menu-2"
+        type="button"
+        class="ml-1 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+        aria-controls="mobile-menu-2"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="h-6 w-6"
+          aria-hidden="true"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          ><path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path></svg
+        >
+      </button>
       <button
         type="button"
         class="mr-3 flex rounded-full bg-gray-800 text-sm focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600 md:mr-0"
@@ -40,50 +124,6 @@ import githubImg from "../assets/github.png";
             clip-rule="evenodd"></path></svg
         >
       </button>
-    </div>
-    <div
-      class="hidden w-full items-center justify-between md:order-1 md:flex md:w-auto"
-      id="mobile-menu-2"
-    >
-      <ul
-        class="mt-4 flex flex-col rounded-lg md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium"
-      >
-        <li>
-          <a
-            href="/"
-            class="block rounded py-2 pl-3 pr-4 text-base text-white"
-            aria-current="page">Pull requests</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="block rounded py-2 pl-3 pr-4 text-base text-white"
-            >Issues</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="block rounded py-2 pl-3 pr-4 text-base text-white"
-            >Codespaces</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="block rounded py-2 pl-3 pr-4 text-base text-white"
-            >Marketplace</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="block rounded py-2 pl-3 pr-4 text-base text-white"
-            >Explore</a
-          >
-        </li>
-      </ul>
     </div>
   </div>
 </nav>
