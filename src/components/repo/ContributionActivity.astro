@@ -2,8 +2,6 @@
 // import Button from "../Button";
 // import DropdownBtn from "../DropdownBtn";
 // import ActivityCard from "../ActivityCard";
-import Button from "../Button";
-import ShowText from "../ShowText";
 ---
 
 <section>
@@ -16,7 +14,7 @@ import ShowText from "../ShowText";
       <h4 class="p-4 text-base font-medium text-white">Maret 2023</h4>
       <span class="w-[70%] border border-solid border-[#777777]"></span>
       <!--Dropdown  Button -->
-      <!-- <div class="relative">
+      <div class="relative">
         <button
           class="text-white bg-[#021B27] font-medium rounded-lg text-sm px-6 py-2.5 text-center inline-flex items-center"
         >
@@ -49,11 +47,17 @@ import ShowText from "../ShowText";
             </li>
           </ul>
         </div>
-      </div> -->
+      </div>
     </div>
     <div class="flex w-full flex-col items-center justify-center gap-6 p-4 xl:w-full xl:text-base">
       <!-- <ActivityCard client:load /> -->
+      <p class="font-medium text-base">No Activity</p>
       <!-- <DropdownBtn client:load triggerBtn="2023" isUseBg={true} lists={["2022", "2021", "2020"]} /> -->
+      <button
+        class="text-[#559DE6] bg-[#21262D] font-base rounded-lg text-sm px-8 py-4 text-center inline-flex items-center"
+      >
+        Show More Activity
+      </button>
     </div>
   </div>
 </section>
