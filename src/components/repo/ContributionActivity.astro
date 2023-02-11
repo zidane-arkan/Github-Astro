@@ -2,7 +2,6 @@
 // import Button from "../Button";
 // import DropdownBtn from "../DropdownBtn";
 // import ActivityCard from "../ActivityCard";
-import DropdownButton from "../DropdownButton";
 import Button from "../Button";
 import ShowText from "../ShowText";
 ---
@@ -17,8 +16,6 @@ import ShowText from "../ShowText";
       <h4 class="p-4 text-base font-medium text-white">Maret 2023</h4>
       <span class="w-[70%] border border-solid border-[#777777]"></span>
       <!--Dropdown  Button -->
-      <DropdownButton client:idle text="2023" menu={["2022", "2021", "2020", "2019"]} />
-
       <!-- <div class="relative">
         <button
           class="text-white bg-[#021B27] font-medium rounded-lg text-sm px-6 py-2.5 text-center inline-flex items-center"
@@ -56,8 +53,7 @@ import ShowText from "../ShowText";
     </div>
     <div class="flex w-full flex-col items-center justify-center gap-6 p-4 xl:w-full xl:text-base">
       <!-- <ActivityCard client:load /> -->
-      <ShowText client:load />
-      <Button client:load />
+      <!-- <DropdownBtn client:load triggerBtn="2023" isUseBg={true} lists={["2022", "2021", "2020"]} /> -->
     </div>
   </div>
 </section>
