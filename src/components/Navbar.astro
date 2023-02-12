@@ -39,11 +39,7 @@ import notifImg from "../assets/notif.png";
       </ul>
     </div>
     <div class="flex items-center gap-8 md:order-2">
-      <button
-        type="button"
-        class="mr-3 flex md:mr-0"
-        id="user-menu-button"
-      >
+      <button type="button" class="mr-3 flex md:mr-0" id="user-menu-button">
         <img class="h-auto w-auto" src={notifImg} alt="user photo" />
       </button>
       <!-- Dropdown menu -->
@@ -67,34 +63,20 @@ import notifImg from "../assets/notif.png";
             clip-rule="evenodd"></path></svg
         >
       </button>
-      <button
-        type="button"
-        class="mr-3 flex text-sm md:mr-0"
-        id="user-menu-button"
-      >
+      <button type="button" class="mr-3 flex items-center text-sm md:mr-0" id="user-menu-button">
         <img class="h-auto w-auto" src={plusImg} alt="user photo" />
+        <svg
+          class="w-4 h-4 ml-2 mt-1"
+          aria-hidden="true"
+          fill="white"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          ><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"
+          ></path>
+        </svg>
       </button>
       <!-- Dropdown menu -->
-      <button
-        data-collapse-toggle="mobile-menu-2"
-        type="button"
-        class="ml-1 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
-        aria-controls="mobile-menu-2"
-        aria-expanded="false"
-      >
-        <span class="sr-only">Open main menu</span>
-        <svg
-          class="h-6 w-6"
-          aria-hidden="true"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          ><path
-            fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"></path></svg
-        >
-      </button>
       <button
         type="button"
         class="mr-3 flex rounded-full bg-gray-800 text-sm focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600 md:mr-0"
@@ -102,27 +84,6 @@ import notifImg from "../assets/notif.png";
       >
         <span class="sr-only">Open user menu</span>
         <img class="h-8 w-8 rounded-full" src={usersmall} alt="user photo" />
-      </button>
-      <!-- Dropdown menu -->
-      <button
-        data-collapse-toggle="mobile-menu-2"
-        type="button"
-        class="ml-1 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
-        aria-controls="mobile-menu-2"
-        aria-expanded="false"
-      >
-        <span class="sr-only">Open main menu</span>
-        <svg
-          class="h-6 w-6"
-          aria-hidden="true"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          ><path
-            fill-rule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clip-rule="evenodd"></path></svg
-        >
       </button>
     </div>
   </div>
