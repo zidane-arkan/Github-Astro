@@ -1,5 +1,5 @@
 ---
-// import DropdownButton from "../dropdown/DropdownButton";
+import DropdownButton from "../DropdownButton";
 // import Contribute from "../dropdown/Contribute";
 // import Button from "../Button";
 // import DropdownBtn from "../DropdownBtn";
@@ -7,42 +7,13 @@ import rocketImg from "../../assets/rocket.png";
 import playImg from "../../assets/play.png";
 ---
 
+
 <section class="space-y-5">
   <div class="flex w-full flex-row justify-between">
     <h3 class="text-lg font-medium md:text-xl">10 contriburions in the last year</h3>
     <!-- <DropdownBtn client:idle isUseBg={false} triggerBtn="Repositorie Settings" lists={["Menu","Data",""]} /> -->
     <!--Dropdown  Button -->
-    <div class="relative">
-      <button
-        class="text-white bg-[#021B27] font-medium rounded-lg text-sm px-6 py-2.5 text-center inline-flex items-center"
-      >
-        Contribution Settings
-        <svg
-          class="w-4 h-4 ml-2"
-          aria-hidden="true"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          ><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"
-          ></path>
-          </svg>
-      </button>
-      <div
-        class="absolute hidden z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
-      >
-        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
-          <li class="menu">
-            <a
-              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-              href="#"
-            >
-              2022
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <DropdownButton client:load text="Contribution Settings" menu={["Menu", "Item", "Kevin"]} />
   </div>
   <div class="rounded-x flex flex-wrap text-center text-sm font-medium">
     <div class="flex w-full flex-row items-center justify-between rounded-t-xl bg-[#13233A] p-6">
